@@ -14,7 +14,10 @@ M.setup = function()
     map("n", "<C-k>", "<C-w>k", opts)
     map("n", "<C-l>", "<C-w>l", opts)
 	-- Normal mode
-	map("i","jk","<ESC>",opts)
+	--Open Mason
+	 map("n","<leader>m","<cmd>Mason<cr>")
+	 --Open Lazy
+	 map("n","<leader>l","<cmd>Lazy<cr>")
 	-- Resize with arrows
 	map("n", "<C-Up>", ":resize -2<CR>", opts)
 	map("n", "<C-Down>", ":resize +2<CR>", opts)
