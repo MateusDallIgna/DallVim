@@ -16,7 +16,7 @@ return {
 
 			local installed_lsps = mason_lspconfig.get_installed_servers()
 
-			local default_lsps = { "lua_ls", "clangd", "pyright"}
+			local default_lsps = { "lua_ls", "clangd"}
 
 			local ensure_installed = vim.tbl_deep_extend("force", installed_lsps, default_lsps)
 

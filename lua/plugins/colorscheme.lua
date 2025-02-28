@@ -5,7 +5,7 @@ return {
         lazy = false,
         config = function()
 			require("material").setup({
-                contrast = {
+               contrast = {
                     sidebars = true, -- Aumenta o contraste da lateral
                     floating_windows = true, -- Melhora visibilidade em popups/flutuantes
                     line_numbers = true, -- Destaca números de linha
