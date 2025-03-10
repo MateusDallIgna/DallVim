@@ -14,7 +14,7 @@ return {
         auto_trigger = true,    -- Sugestões aparecem automaticamente
         debounce = 75,          -- Ajuste o tempo de debounce se necessário
         keymap = {
-          accept  = "<Tab>",     -- <Tab> para aceitar a sugestão
+          accept  = "<S-Tab>",     -- <Tab> para aceitar a sugestão
           next    = "<C-n>",     -- Próxima sugestão
           prev    = "<C-p>",     -- Sugestão anterior
           dismiss = "<C-e>",     -- Descartar sugestão
@@ -33,7 +33,7 @@ return {
           auto_trigger = true,
           debounce = 75,
           keymap = {
-            accept  = "<Tab>",
+            accept  = "<S-Tab>",
             next    = "<C-n>",
             prev    = "<C-p>",
             dismiss = "<C-e>",
@@ -48,3 +48,4 @@ return {
     vim.keymap.set("n", "<leader>c", "<cmd>lua toggle_codeium()<CR>", { noremap = true, silent = true })
   end,
 }
+
