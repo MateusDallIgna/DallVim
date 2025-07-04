@@ -13,10 +13,10 @@ M.setup = function()
 	-- Normal mode
 
 	--Open Mason
-	 map("n","<leader>m","<cmd>Mason<cr>")
+	 map("n","<leader>m","<cmd>Mason<cr>", { desc = "Mason" })
 
 	 --Open Lazy
-	 map("n","<leader>l","<cmd>Lazy<cr>")
+	 map("n","<leader>l","<cmd>Lazy<cr>", { desc = "Lazy" })
 
 	-- Resize with arrows
 	map("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -53,7 +53,8 @@ M.setup = function()
     map("n", "gr", vim.lsp.buf.references, opts)
     map("n", "gi", vim.lsp.buf.implementation, opts)
     map("n", "K", vim.lsp.buf.hover, opts)
-    map("n", "<leader>rn", vim.lsp.buf.rename, opts)
+    map("n", "<leader>rn", vim.lsp.buf.rename, opts, { desc = "Rename variable" })
+	map("n", "<leader>rf", vim.diagnostic.open_float, opts, { desc = "Open float error"})
 
 end
 

@@ -17,3 +17,8 @@ vim.opt.termguicolors = true
 --et leader to space
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
+--Increase update time
+vim.o.timeout = true
+vim.o.timeoutlen = 100
+
